@@ -1,0 +1,26 @@
+#!/bin/python3
+# Problem Readme.md'de verilmiştir.
+import math
+import os
+import random
+import re
+import sys
+
+def repeatedString(s, n):
+    length = s.count('a')
+    s1=""
+    if length==0:
+        return 0
+    else:
+        g = int(n / len(s))
+        length1 = length * g
+
+        for i in range(n%len(s)):
+            s1+=s[i]
+
+        return length1+s1.count('a')
+if __name__ == '__main__':
+    s = input()
+    n = int(input())
+    result = repeatedString(s, n)
+    print(result)
