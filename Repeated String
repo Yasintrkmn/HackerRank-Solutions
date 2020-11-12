@@ -1,6 +1,6 @@
 #!/bin/python3
 """
-Bir string s ve bir tamsayı n verildiğinde;
+Bir string (s) ve bir tamsayı (n) verildiğinde;
 verilen string len(s) = n olacak şekilde tekrarlandığında string içinde kaç tane'a' harfi bulunur? 
 Örneğin, s="abca" ve n=11 verilirse string="cacbacacbac" ve 'a' sayısı 4 olur.
 """
@@ -13,16 +13,14 @@ import sys
 def repeatedString(s, n):
     length = s.count('a')
     s1=""
-    if length==0:
-        return 0
-    else:
-        g = int(n / len(s))
-        length1 = length * g
+    g = int(n / len(s))
+    length1 = length * g
 
-        for i in range(n%len(s)):
-            s1+=s[i]
+    for i in range(n%len(s)):
+        s1+=s[i]
 
-        return length1+s1.count('a')
+    return length1+s1.count('a')
+
 if __name__ == '__main__':
     s = input()
     n = int(input())
