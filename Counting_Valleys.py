@@ -24,8 +24,6 @@ def countingValleys(steps, path):
         sum+=liste[k]
         if (sum==0) & (sum-liste[k]<0):
             count+=1
-
-
     return count
 
 if __name__ == '__main__':
