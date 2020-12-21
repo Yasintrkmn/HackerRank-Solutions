@@ -1,1 +1,1 @@
-# Python
+# Different problems and solves in Python.
