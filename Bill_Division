@@ -1,7 +1,6 @@
 Problem: https://www.hackerrank.com/challenges/bon-appetit/problem
 
 def bonAppetit(bill, k, b):
-
     sums = (sum(bill) - bill[k])/2
     if sums == b:
         print("Bon Appetit")
