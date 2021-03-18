@@ -1,1 +1,1 @@
-# Different problems and solves in Python.
+# HackerRank problems and solutions in Python.
